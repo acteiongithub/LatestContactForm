@@ -9,7 +9,7 @@ const port = 3000;
 
 //app.use(cors());
 app.use(cors({
-  origin: 'http://98.81.19.214/'
+  origin: 'http://34.239.128.51/'
 }));
 app.use(bodyParser.json());
 
