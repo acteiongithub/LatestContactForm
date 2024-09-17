@@ -5,10 +5,14 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
-const port = 5000;
+const port = 3000;
 
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+  origin: 'http://98.81.19.214/'
+}));
 app.use(bodyParser.json());
+
 
 const db = mysql.createConnection({
     host: process.env.DB_HOST,
